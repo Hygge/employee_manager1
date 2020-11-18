@@ -1,0 +1,22 @@
+
+-- 员工信息表
+CREATE table bumen (
+id int primary key auto_increment,
+bname varchar(50),
+bmiaoshu varchar(50))CHARSET=utf8;
+
+-- 员工表
+create TABLE yuangong (
+id int PRIMARY KEY auto_increment,
+yname VARCHAR(50),
+ysex VARCHAR(50),
+bid int,
+yage INT,
+ytelephone VARCHAR(50),
+yzhaohao varchar(50),
+ypassword VARCHAR(50))ENGINE=INNODB CHARSET=utf8;
+
+use zhaoteng;
+select * from yuangong where yzhanghao='abc';
+
+select*from yuangong where yzhanghao='abc' and ypassword='1123';
